@@ -8,10 +8,13 @@ import Search from "./components/Pages/Search/Search";
 import { Container } from "@material-ui/core";
 
 
+
 function App() {
   return (
     <BrowserRouter>
+    
       <Header />
+     
       <div className="app">
         <Container>
           <Switch>

@@ -26,7 +26,7 @@ const Genres = ({
 
   const fetchGenres = async () => {
     const { data } = await axios.get(
-      `https://api.themoviedb.org/3/genre/movie${type}/list?api_key=${process.env.REACT_APP_API_KEY}`
+      `https://api.themoviedb.org/3/genre/${type}/list?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
     );
     setGenres(data.genres);
   };
@@ -47,7 +47,7 @@ const Genres = ({
           style={{ margin: 2 }}
           label={genre.name}
           key={genre.id}
-          color="secondary"
+          color="primary"
           clickable
           size="small"
           onDelete={() => handleRemove(genre)}

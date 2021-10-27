@@ -29,7 +29,7 @@ export default function CustomPagination({ setPage, numOfPages = 5 }) {
         <Pagination
           onChange={(e) => handlePageChange(e.target.textContent)}
           count={numOfPages}
-          color="secondary"
+          color="primary"
           hideNextButton
           hidePrevButton
         />

@@ -30,7 +30,7 @@ const Movies = () => {
 
   return (
     <div>
-      <span className="pageTitle">Descubrir Peliculas</span>
+      <span className="pageTitle">Discover Movies</span>
       <Genres
         type="movie"
         selectedGenres={selectedGenres}
@@ -39,7 +39,7 @@ const Movies = () => {
         setGenres={setGenres}
         setPage={setPage}
       />
-      <div className="Movies">
+      <div className="trending">
         {content &&
           content.map((c) => (
             <SingleContent
