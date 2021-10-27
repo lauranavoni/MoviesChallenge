@@ -1,9 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Genres from "../";
-import SingleContent from "../../components/SingleContent/SingleContent";
-import useGenre from "";
-import CustomPagination from "../../components/Pagination/CustomPagination";
+import Genres from "../../Genres/Genres";
+import SingleContent from "../../SingleContent/SingleContent";
+import useGenre from "../../../hooks/useGenre";
+import CustomPagination from "../../Pagination/CustomPagination";
 
 const Movies = () => {
   const [genres, setGenres] = useState([]);
@@ -30,7 +30,7 @@ const Movies = () => {
 
   return (
     <div>
-      <span className="pageTitle">Discover Movies</span>
+      <span className="pageTitle">Descubrir Peliculas</span>
       <Genres
         type="movie"
         selectedGenres={selectedGenres}

@@ -1,6 +1,6 @@
 import {
     Button,
-    createMuiTheme,
+    createTheme,
     Tab,
     Tabs,
     TextField,
@@ -10,8 +10,8 @@ import {
   import SearchIcon from "@material-ui/icons/Search";
   import { useEffect, useState } from "react";
   import axios from "axios";
-  import CustomPagination from "../../components/Pagination/CustomPagination";
-  import SingleContent from "../../components/SingleContent/SingleContent";
+  import CustomPagination from "../../Pagination/CustomPagination";
+  import SingleContent from "../../SingleContent/SingleContent";
   
   const Search = () => {
     const [type, setType] = useState(0);
@@ -20,7 +20,7 @@ import {
     const [content, setContent] = useState([]);
     const [numOfPages, setNumOfPages] = useState();
   
-    const darkTheme = createMuiTheme({
+    const darkTheme = createTheme({
       palette: {
         type: "dark",
         primary: {

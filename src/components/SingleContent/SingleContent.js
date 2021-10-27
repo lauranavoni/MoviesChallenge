@@ -15,7 +15,7 @@ const SingleContent = ({
     <ContentModal media_type={media_type} id={id}>
       <Badge
         badgeContent={vote_average}
-        color={vote_average > 4 ? "primary" : "secondary"}
+        color={vote_average > 6? "primary" : "secondary"}
       />
       <img
         className="poster"
